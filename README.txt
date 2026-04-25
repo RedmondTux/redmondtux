@@ -6,7 +6,7 @@ no website yet
 
 Version 0.0.0
 
-April 25, 2026
+April 26, 2026
 
 NOTICE! THIS GAME IS UNDER CONSTRUCTION!
 Things you'll notice:
@@ -40,7 +40,7 @@ DOCUMENTATION
   Important documentation for "RedmondTux" is contained in multiple files.
   Please see them:
 
-    AUTHORS.txt    - Credits for who made this game. (Not made yet)
+    AUTHORS.txt    - Credits for who made this game.
     LICENSE        - The GNU General Public License, which "RedmondTux" is under.
     INSTALL.txt    - Instructions on requirements, compiling and testing.
     README.txt     - (This file.)  Game story, usage, rules and controls.
