@@ -42,7 +42,6 @@ DOCUMENTATION
 
     AUTHORS.txt    - Credits for who made this game.
     LICENSE        - The GNU General Public License, which "RedmondTux" is under.
-    INSTALL.txt    - Instructions on requirements, compiling and testing.
     README.txt     - (This file.)  Game story, usage, rules and controls.
     TODO.txt       - A wish-list for this version of "RedmondTux"
 
