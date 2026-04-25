@@ -24,4 +24,6 @@ CREDITS
   RedmondTux
     Maintainer
       Sophie (Vaesea) Ball
+    Misc Credits
+      Grumbel (SuperTux-Medium Font) (This font was made for SuperTux but is used here)
     
