@@ -1,0 +1,27 @@
+AUTHORS.txt for RedmondTux
+
+by those listed in this file
+no website yet
+
+Version 0.0.8 (in development)
+
+August 26, 2026
+
+CREDITS
+-------
+  Original Game (SuperTux v0.0.6)
+    BilL Kendrick
+    Tobgle Glaesser
+    Duong-Khang NGUYEN
+    Ricardo Cruz
+    James Harr
+    Wesley Poole
+    Steve Baker
+    Robert S Dubinski
+    Brian Stentzel
+    Grumbel
+
+  RedmondTux
+    Maintainer
+      Sophie (Vaesea) Ball
+    
