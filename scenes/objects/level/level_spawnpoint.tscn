@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c7g6326ix43vx"]
+
+[ext_resource type="Texture2D" uid="uid://dt5muptv6oxo7" path="res://data/images/worldmap/objects/tux.png" id="1_1a54o"]
+[ext_resource type="Script" uid="uid://dp4mdbpuxsohk" path="res://scripts/objects/level/level_spawnpoint.gd" id="1_kfff0"]
+
+[node name="LevelSpawnpoint" type="Marker2D" unique_id=816758294]
+script = ExtResource("1_kfff0")
+
+[node name="Image" type="Sprite2D" parent="." unique_id=369815290]
+position = Vector2(16, 16)
+texture = ExtResource("1_1a54o")

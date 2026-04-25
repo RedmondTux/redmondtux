@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://bw1ad8xbua26"]
+
+[ext_resource type="Script" uid="uid://dli1pp2o6vrbj" path="res://scripts/menu/menu.gd" id="1_037ec"]
+[ext_resource type="Texture2D" uid="uid://b6g8b5bh4mc2n" path="res://data/images/title/tux_menu.png" id="1_mcvr8"]
+[ext_resource type="Texture2D" uid="uid://i7a1rx1o3syu" path="res://data/images/title/logo.png" id="2_e0arn"]
+[ext_resource type="FontFile" uid="uid://b5nvs8h5mcg3u" path="res://data/fonts/SuperTux-Medium.ttf" id="3_e0arn"]
+
+[sub_resource type="Gradient" id="Gradient_y1o0p"]
+colors = PackedColorArray(0, 0, 0, 1, 0.52040946, 0.5204096, 1.92523e-07, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_klgdb"]
+gradient = SubResource("Gradient_y1o0p")
+fill_from = Vector2(1, 0)
+fill_to = Vector2(0, 0)
+
+[node name="Menu" type="Node2D" unique_id=1380326968]
+script = ExtResource("1_037ec")
+
+[node name="Gradient" type="Sprite2D" parent="." unique_id=115870718]
+position = Vector2(320.00815, 240.00314)
+rotation = 1.5707964
+scale = Vector2(7.5000978, 10.000255)
+texture = SubResource("GradientTexture2D_klgdb")
+
+[node name="TuxMenu" type="Sprite2D" parent="." unique_id=646181306]
+position = Vector2(480, 295)
+texture = ExtResource("1_mcvr8")
+
+[node name="Logo" type="Sprite2D" parent="." unique_id=532919363]
+position = Vector2(320, 64)
+texture = ExtResource("2_e0arn")
+
+[node name="PlayButton" type="Button" parent="." unique_id=1645316368]
+offset_left = 192.0
+offset_top = 208.0
+offset_right = 448.0
+offset_bottom = 272.0
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("3_e0arn")
+theme_override_font_sizes/font_size = 26
+text = "Play Game"
+
+[node name="CreditsButton" type="Button" parent="." unique_id=248307335]
+offset_left = 118.0
+offset_top = 272.0
+offset_right = 523.0
+offset_bottom = 336.0
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("3_e0arn")
+theme_override_font_sizes/font_size = 26
+text = "Credits (Not Added Yet)"
+
+[node name="DeleteButton" type="Button" parent="." unique_id=2075640792]
+offset_left = 75.0
+offset_top = 336.0
+offset_right = 562.0
+offset_bottom = 400.0
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("3_e0arn")
+theme_override_font_sizes/font_size = 26
+text = "Delete Save (Not Added Yet)"
+
+[node name="GPLText" type="RichTextLabel" parent="." unique_id=264661998]
+offset_top = 400.0
+offset_right = 640.0
+offset_bottom = 480.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 6
+theme_override_constants/outline_size = 6
+theme_override_fonts/normal_font = ExtResource("3_e0arn")
+bbcode_enabled = true
+text = "[wave]This program comes with absolutely no warranty. This game is free software, and you can redistribute it under certain conditions, as it is licensed under the GNU General Public License.[/wave]"
+horizontal_alignment = 1
+vertical_alignment = 1

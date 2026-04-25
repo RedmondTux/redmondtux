@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dxh05pt3bk0do"]
+
+[ext_resource type="Script" uid="uid://dnene4r1al2ei" path="res://scripts/objects/level/goal.gd" id="1_fbtnl"]
+[ext_resource type="SpriteFrames" uid="uid://dmydh5om0kl5n" path="res://spriteframes/flag.tres" id="2_vc4k1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qa0bd"]
+size = Vector2(32, 1760)
+
+[node name="Goal" type="Area2D" unique_id=505774825]
+z_index = 1
+collision_mask = 2
+script = ExtResource("1_fbtnl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1333994964]
+position = Vector2(16, 112)
+shape = SubResource("RectangleShape2D_qa0bd")
+
+[node name="Image" type="AnimatedSprite2D" parent="." unique_id=996124669]
+sprite_frames = ExtResource("2_vc4k1")
+centered = false

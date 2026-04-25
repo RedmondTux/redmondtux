@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://cywcmiuyp18l1"]
+
+[ext_resource type="FontFile" uid="uid://b5nvs8h5mcg3u" path="res://data/fonts/SuperTux-Medium.ttf" id="1_48c2t"]
+[ext_resource type="Script" uid="uid://8mp7e7tcc10e" path="res://scripts/hud/hud.gd" id="1_cgeww"]
+
+[node name="HUD" type="CanvasLayer" unique_id=981324634]
+layer = 50
+script = ExtResource("1_cgeww")
+
+[node name="Score" type="Label" parent="." unique_id=725581512]
+offset_top = 2.0
+offset_right = 108.0
+offset_bottom = 25.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_constants/shadow_outline_size = 2
+theme_override_fonts/font = ExtResource("1_48c2t")
+text = "Score: 999"
+
+[node name="Distro" type="Label" parent="." unique_id=264101331]
+offset_top = 25.0
+offset_right = 103.0
+offset_bottom = 48.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_constants/shadow_outline_size = 2
+theme_override_fonts/font = ExtResource("1_48c2t")
+text = "Distros: 999"
+
+[node name="Health" type="Label" parent="." unique_id=962561613]
+offset_top = 48.0
+offset_right = 122.0
+offset_bottom = 71.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_constants/shadow_outline_size = 2
+theme_override_fonts/font = ExtResource("1_48c2t")
+text = "Health: 6 / 4"

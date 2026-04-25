@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://m5dabvx58qqj"]
+
+[ext_resource type="SpriteFrames" uid="uid://jv1b0384nwvn" path="res://spriteframes/bsod.tres" id="1_gnw62"]
+[ext_resource type="Script" uid="uid://ep322d7re2w" path="res://scripts/characters/enemy/bsod.gd" id="1_t6ekt"]
+[ext_resource type="AudioStream" uid="uid://blethyuoyhfev" path="res://data/sounds/fall.wav" id="2_l8sse"]
+[ext_resource type="AudioStream" uid="uid://cdfloeuac6ocs" path="res://data/sounds/squish.wav" id="3_t6ekt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5x5oa"]
+size = Vector2(25, 27)
+
+[node name="BSOD" type="CharacterBody2D" unique_id=1580400735]
+collision_layer = 4
+collision_mask = 257
+script = ExtResource("1_t6ekt")
+
+[node name="Image" type="AnimatedSprite2D" parent="." unique_id=148055618]
+sprite_frames = ExtResource("1_gnw62")
+animation = &"walk"
+centered = false
+
+[node name="Collision" type="CollisionShape2D" parent="." unique_id=1467225694]
+position = Vector2(14.5, 18.5)
+shape = SubResource("RectangleShape2D_5x5oa")
+
+[node name="TuxDetector" type="Area2D" parent="." unique_id=2020153296]
+collision_layer = 4
+collision_mask = 134
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TuxDetector" unique_id=513255466]
+position = Vector2(14.5, 18.5)
+shape = SubResource("RectangleShape2D_5x5oa")
+
+[node name="FallSound" type="AudioStreamPlayer2D" parent="." unique_id=1782140648]
+stream = ExtResource("2_l8sse")
+max_distance = 1000.0
+panning_strength = 3.0
+
+[node name="SquishSound" type="AudioStreamPlayer2D" parent="." unique_id=1026000340]
+stream = ExtResource("3_t6ekt")
+max_distance = 1000.0
+panning_strength = 3.0
+
+[node name="Enabler" type="VisibleOnScreenEnabler2D" parent="." unique_id=1241839109]
+rect = Rect2(-96, -96, 224, 224)
+
+[node name="GroundDetector" type="RayCast2D" parent="." unique_id=100435645]
+position = Vector2(2, 0)
+target_position = Vector2(0, 48)
+collision_mask = 0

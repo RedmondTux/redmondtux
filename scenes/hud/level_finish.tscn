@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://buikh34hx0lcv"]
+
+[ext_resource type="Script" uid="uid://bosqh071kvs0i" path="res://scripts/hud/level_finish.gd" id="1_mr2s7"]
+[ext_resource type="Texture2D" uid="uid://dn2jkpjb7ktv1" path="res://data/images/title/tux_menu_revealed.png" id="1_toabj"]
+
+[sub_resource type="Gradient" id="Gradient_toabj"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 1, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_mr2s7"]
+gradient = SubResource("Gradient_toabj")
+fill_from = Vector2(1, 0)
+fill_to = Vector2(0, 0)
+
+[node name="LevelFinish" type="CanvasLayer" unique_id=122699391]
+process_mode = 3
+layer = 1000
+script = ExtResource("1_mr2s7")
+
+[node name="Gradient" type="Sprite2D" parent="." unique_id=1476327408]
+position = Vector2(320.00815, 240.00314)
+rotation = 1.5707964
+scale = Vector2(7.5000978, 10.000255)
+texture = SubResource("GradientTexture2D_mr2s7")
+
+[node name="Result" type="RichTextLabel" parent="." unique_id=1793357705]
+offset_top = 13.0
+offset_right = 640.0
+offset_bottom = 141.0
+theme_override_colors/default_color = Color(0, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 22
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/normal_font_size = 81
+bbcode_enabled = true
+text = "[wave]Level Done![/wave]"
+horizontal_alignment = 1
+
+[node name="Score" type="RichTextLabel" parent="." unique_id=998040795]
+offset_left = 32.0
+offset_top = 160.0
+offset_right = 640.0
+offset_bottom = 224.0
+theme_override_colors/default_color = Color(0.99444026, 1, 0.47712308, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 11
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "Score: "
+vertical_alignment = 2
+
+[node name="Distros" type="RichTextLabel" parent="." unique_id=822148427]
+offset_left = 32.0
+offset_top = 224.0
+offset_right = 640.0
+offset_bottom = 288.0
+theme_override_colors/default_color = Color(0.99444026, 1, 0.47712308, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 11
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "Distros: "
+
+[node name="TuxImage" type="Sprite2D" parent="." unique_id=2031910064]
+position = Vector2(480, 290)
+texture = ExtResource("1_toabj")

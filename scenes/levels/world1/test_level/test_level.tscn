@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://0olcpg1gb2ex"]
+
+[ext_resource type="Script" uid="uid://dm4d1e340r0f" path="res://scripts/level_scripts/level.gd" id="1_ual7h"]
+[ext_resource type="PackedScene" uid="uid://cywcmiuyp18l1" path="res://scenes/hud/hud.tscn" id="2_ual7h"]
+[ext_resource type="PackedScene" uid="uid://rmr8sssmgr84" path="res://scenes/characters/player/tux.tscn" id="3_6eq34"]
+[ext_resource type="PackedScene" uid="uid://so7qkghttgyu" path="res://scenes/levels/world1/test_level/sectors/main.tscn" id="3_s6nmk"]
+
+[node name="TestLevel" type="Node2D" unique_id=1339335920]
+script = ExtResource("1_ual7h")
+level_name = "Test Level"
+level_creator = "Vaesea"
+
+[node name="Misc" type="Node2D" parent="." unique_id=620251489]
+
+[node name="HUD" parent="Misc" unique_id=981324634 instance=ExtResource("2_ual7h")]
+
+[node name="Main" parent="." unique_id=1279015082 instance=ExtResource("3_s6nmk")]
+
+[node name="Tux" parent="." unique_id=60483270 instance=ExtResource("3_6eq34")]
+position = Vector2(-64, 0)
