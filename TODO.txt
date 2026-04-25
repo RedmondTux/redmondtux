@@ -1,0 +1,32 @@
+TODO.txt for RedmondTux
+
+by the people listed in the credits
+no email yet
+no website yet
+
+Version 0.0.8
+
+April 26, 2026
+
+TO DO
+-----
+  Laptop Enemy (Image will be improved, 0.0.6 one (no offense) looks like paper)
+  Bag Enemy (Should the image be improved?)
+  "Anstartica" (0.0.0 Antarctica Level)
+  Via Nostalgica (Antarctica 1)
+  Tobgle Road (Antarctica 2)
+  The Somewhat Smaller Bath (Mondo)
+  Above The Arctic Skies (Sky - Take 1)
+  Highscore Screen? (Or should that be a 0.1.0 thing?)
+  Tileable Cloud Tiles
+  New Cape
+  Rename project to RedmondTux in menu
+  
+DONE
+-----
+  BSOD Enemy (Image will be improved later on in 0.0.9)
+  New Antarctica Tiles
+  Arctis Background Remake
+  New Level Start screen
+  New Results Screen
+  New Menu
