@@ -1,0 +1,119 @@
+v0.1.0 Design Document
+
+by the people listed in the credits under the RedmondTux section
+no website yet
+
+April 26, 2026
+
+OVERVIEW
+--------
+This is the design document for v0.1.0, the first stable version
+of the game. This 0.1.0 release of the game will feature:
+- 7 enemies (BSOD, RSOD, Laptop, Redtop, Bag, Explod, Flammable)
+- 6 playable levels
+- New music
+- Completely redone, but still close to the original v0.0.6, graphics
+
+ACTIONS
+-------
+There will be various changes, like there not being a skid animation
+anymore, as it's unnecessary. Also, running is now automatic. A major
+change is that there will now be a butt-jump action, similar to Super
+Mario's Ground Pound.
+
+ENEMIES
+-------
+This list includes old and new enemies.
+
+  BSOD
+    This is a basic walking enemy that walks in a direction, hits a wall, 
+    and flips. This enemy is very easy to defeat as all you need to do is 
+    bump it from below (if it's on bricks or bonus blocks) or squish it 
+    from above by just jumping on it.
+
+    It's sprites could be improved, but it should be good enough for the
+    unstable pre-0.1.0 version being worked on named 0.0.8.
+  
+  RSOD
+    Same as the BSOD, but when reaching an edge, instead of falling, this
+    enemy will flip.
+  
+  Laptop
+    This is another basic walking enemy that does the same as the BSOD, but
+    with a twist. When it's squished, it can be kicked, held or thrown (it
+    can only be thrown if it's being held)
+    
+    It's sprites will be improved for 0.0.8, as the current sprites looks
+    like a laptop except it's made out of paper.
+  
+  Redtop
+    Same as the Laptop, but when it's awake and it reaches an edge, instead
+    of falling, this enemy will flip.
+  
+  Bag
+    This is a basic jumping enemy. The only movement it does is jumping at
+    the same height every time. When it dies, it should drop 2 coins, which
+    are worth 4 distros.
+  
+  Explod
+    This is a basic walking bomb enemy, similar to something like Bob-Omb from 
+    Super Mario. When you squish this enemy, it stops walking and starts a 
+    countdown timer that lasts until it explodes. This bomb explodes quick, so
+    you need to be fast after squishing it.
+  
+  Flammable
+    This is an enemy that ignores all collisions and moves in a circle. It can't
+    be killed.
+
+MISC
+----
+  Aspect Ratio
+    The aspect ratio should be 640x480 for now. It can be changed later to be 
+    16:9 (854x480)
+
+  Random Things
+    There won't be lives or timers anymore, so the player can spend as much time 
+    as they want on a level, and can die as much as they want (or don't want) on 
+    a level.
+
+    There will be parallax backgrounds, unlike SuperTux 0.0.6, which only allowed
+    one image for the backgrounds.
+
+    There will be back-scrolling because it's actually harder to remove back
+    scrolling than it is to keep it.
+
+LEVELS
+------
+Every level from v0.0.6 should be included here with the new enemies like RSOD,
+Redtop, and Explod.
+
+TILES
+-----
+Every Antarctica tile will be remade due to those tiles looking either bad (rock
+tiles) or needing improvements but isn't too bad (snow tiles). Why were the snow
+tiles remade? To fit the style of the snow rocks and the background, and also
+because the snow had no color and the ice was a bit weird, although not bad.
+
+Darkstone Tiles will be updated to remove the weird green outline square from
+the bottom left of one of the tiles, and it will now be smoother.
+
+There will be a one-tile version of the Darkstone tiles for autotiling / terrain.
+
+(These are already done for v0.0.8 except the one-tile Darkstone tile)
+
+BACKGROUNDS
+-----------
+As said in the MISC section, backgrounds are now parallax backgrounds, as Godot
+makes it way easier than something like SDL. The Arctis background has been remade
+for v0.0.8, but may need the shore image to be darker, which can be something done
+after v0.0.8 but before v0.1.0 releases.
+
+OBJECTS
+-------
+Only new objects will be listed here.
+
+  Coins
+    Coins are equal to 2 distros. So far, the only way of getting coins is planned
+    to be the Bag enemy, but hard-to-kill enemies that will be added in future
+    versions will likely contain coins. There could also be coins in hard-to-get-to
+    places in levels.
