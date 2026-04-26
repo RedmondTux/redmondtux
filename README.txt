@@ -28,6 +28,8 @@ DESCRIPTION
   explained in the license) and price (you don't need to pay anything to play or
   modify this game)
 
+  SuperTux Team (and SuperTux v0.0.6 developers) were not involved with this fangame.
+
 STORY
 -----
   Tux and Gown are having a picnic in Antarctica, when suddenly Gown is
