@@ -1,6 +1,6 @@
 README.md for RedmondTux
 
-by the people listed in the credits
+by the people listed in the credits under the RedmondTux section
 no email address yet
 no website yet
 
