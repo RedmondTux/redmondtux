@@ -1,6 +1,6 @@
 README.md for RedmondTux
 
-by the people listed in the credits
+by the people listed in the credits under the RedmondTux section
 no email address yet
 no website yet
 
@@ -27,6 +27,8 @@ DESCRIPTION
   as in freedom (you can do anything you want with it with only some limitations
   explained in the license) and price (you don't need to pay anything to play or
   modify this game)
+
+  SuperTux Team (and SuperTux v0.0.6 developers) were not involved with this fangame.
 
 STORY
 -----

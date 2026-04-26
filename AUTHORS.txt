@@ -1,16 +1,16 @@
 AUTHORS.txt for RedmondTux
 
-by those listed in this file
+by those listed in this file under the RedmondTux section
 no website yet
 
 Version 0.0.8 (in development)
 
-August 26, 2026
+April 26, 2026
 
 CREDITS
 -------
   Original Game (SuperTux v0.0.6)
-    BilL Kendrick
+    Bill Kendrick
     Tobgle Glaesser
     Duong-Khang NGUYEN
     Ricardo Cruz
@@ -21,9 +21,11 @@ CREDITS
     Brian Stentzel
     Grumbel
 
+  Original Game (SuperTux v0.1.3)
+    Grumbel (SuperTux-Medium font made for SuperTux)
+    Wansti ("The Fortress" song made for SuperTux, currently planned to be used as a placeholder for castle levels until v0.1.1)
+
   RedmondTux
     Maintainer
       Sophie (Vaesea) Ball
-    Misc Credits
-      Grumbel (SuperTux-Medium Font) (This font was made for SuperTux but is used here)
     
