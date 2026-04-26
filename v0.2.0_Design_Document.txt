@@ -1,0 +1,95 @@
+v0.2.0 Design Document
+
+by the people listed in the credits under the RedmondTux section
+no website yet
+
+April 26, 2026
+
+OVERVIEW
+--------
+This is the design document for v0.2.0, the second stable version
+of the game. This v0.2.0 release of the game will feature:
+- 8 enemies (v0.1.0 enemies, Clippeye, Adelie)
+- 6 playable levels (updated versions of the antarctica levels)
+Why not add a new world? Because doing that is too much for this
+version, as it's just meant to improve on what's already there.
+
+ENEMIES
+-------
+Only new enemies will be listed here.
+
+  Clippeye
+    This enemy is similar to the bouncing koopa enemy from the
+    Super Mario Bros game, however, it can be killed in one
+    hit, similar to the BSOD enemy.
+
+  Adelie
+    This enemy is unique! It usually walks around fast like a
+    BSOD, but when it sees Tux, it runs towards him. When
+    running towards Tux, it can't change direction, and when it 
+    hits a wall while running, it falls off the screen.
+
+BOSSES
+------
+This version will finally finish Antarctica by adding the boss
+fight!
+
+  GSOD (Green Screen Of Death)
+    This boss starts on the right side of the screen, it has a 
+    cannon that shoots fire, it's big, and it jumps to the other
+    side when it gets hurt. You have to throw laptops at it, but
+    when it gets down to 2/5 health, 2 blue flammables start
+    surrounding it, which defend the GSOD against everything else,
+    including Tux.
+
+EXTRA ADDITION TO THE STORY
+---------------------------
+This is for when the boss is defeated. It's very similar to
+SuperTux Milestone 1's ending.
+
+  "First Clue"
+    Tux had defeated GSOD, and was looking inside of it out of
+    curiosity and to see whether there was anything he could find
+    inside it, but all he found was a note by something that only
+    called itself "Emperor". The note said:
+    
+    "Congratulations, Tux. If you are reading this, you have
+    removed my control over Antarctica, however, you may see that
+    your beloved Gown is not here. What you did not know, is I
+    have many fortresses, spread across the lands! Do not be
+    silly. It is best that you give up now."
+    
+    Tux was sadly walking across the throne room, when he came
+    across another note, this one was by Gown. It was a map with
+    a fortress badly drawn in a jungle. Tux knew what this meant,
+    Gown was in a fortress in the jungle! When Tux came to this
+    realization, alarms started going off in the castle, and he
+    could see it falling behind him! So he ran out, entered the
+    water, and started swimming without looking behind him!
+
+    When he got to an island, he saw that he was on a beach. At
+    first, he thought he was at the wrong place, until he saw that
+    the jungle was right in front of him, and realized he was in
+    the correct place.
+
+MISC
+----
+Aspect Ratio
+  The aspect ratio should be set to 16:9 480p, which is 640x480.
+
+LEVELS
+------
+The levels should be improved, however, there shouldn't be any
+new levels for now. Maybe, if there's any good fanmade levels,
+they could be added to a bonus world.
+
+OBJECTS
+-------
+The only new objects here for this version is a new power-up!
+
+  Ice Cube
+    This power-up turns Tux into Ice Tux! Ice Tux can shoot
+    ice at the cost of the ability to duck, which is replaced
+    with the ability for Tux to grow icicles around him.
+
+  
