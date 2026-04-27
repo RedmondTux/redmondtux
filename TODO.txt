@@ -6,11 +6,11 @@ no website yet
 
 Version 0.0.8
 
-April 26, 2026
+April 27, 2026
 
 TO DO
 -----
-  Laptop Enemy (Image will be improved, 0.0.6 one (no offense) looks like paper)
+  Laptop Enemy (Image will be improved for 0.0.9 or 0.1.0 but not 0.0.8)
   Bag Enemy (Should the image be improved?)
   "Anstartica" (0.0.0 Antarctica Level)
   Via Nostalgica (Antarctica 1)
