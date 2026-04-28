@@ -1,0 +1,63 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://boniqvgqddppl"]
+
+[ext_resource type="Texture2D" uid="uid://dtqanqlbcfl0g" path="res://data/images/creatures/tux/normal/duck-0.png" id="1_bh1dn"]
+[ext_resource type="Texture2D" uid="uid://db4wvoohtka8m" path="res://data/images/creatures/tux/normal/jump-0.png" id="2_xfkto"]
+[ext_resource type="Texture2D" uid="uid://dyotpxer5meoo" path="res://data/images/creatures/tux/normal/stand-0.png" id="3_fat8f"]
+[ext_resource type="Texture2D" uid="uid://dn3uxlopm6tn3" path="res://data/images/creatures/tux/normal/stand-1-3.png" id="4_8l5fi"]
+[ext_resource type="Texture2D" uid="uid://ci78nh66e3kp4" path="res://data/images/creatures/tux/normal/stand-2.png" id="5_42skq"]
+[ext_resource type="Texture2D" uid="uid://dn7kqluriyw2j" path="res://data/images/creatures/tux/normal/walk-0.png" id="6_tkrli"]
+[ext_resource type="Texture2D" uid="uid://csk7gejt2h48x" path="res://data/images/creatures/tux/normal/walk-1-3.png" id="7_iyc4w"]
+[ext_resource type="Texture2D" uid="uid://b122xy35ijryi" path="res://data/images/creatures/tux/normal/walk-2.png" id="8_sehnc"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_bh1dn")
+}],
+"loop": false,
+"name": &"duck",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xfkto")
+}],
+"loop": false,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 20.0,
+"texture": ExtResource("3_fat8f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8l5fi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_42skq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8l5fi")
+}],
+"loop": true,
+"name": &"stand",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_tkrli")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_iyc4w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_sehnc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_iyc4w")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 7.0
+}]

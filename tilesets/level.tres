@@ -1,0 +1,85 @@
+[gd_resource type="TileSet" format=3 uid="uid://bym5x12cp0cnv"]
+
+[ext_resource type="Texture2D" uid="uid://cnygk4ndtk814" path="res://data/images/themes/background/cloud.png" id="1_eu1fi"]
+[ext_resource type="Texture2D" uid="uid://cink5ugp5kdpv" path="res://data/images/themes/antarctica/tiles.png" id="2_sur4m"]
+[ext_resource type="Texture2D" uid="uid://db5s5c5tw1awy" path="res://data/images/themes/darkstone/tiles.png" id="3_4700j"]
+[ext_resource type="Texture2D" uid="uid://bv77oxv2kfvxm" path="res://data/images/themes/misc/pole.png" id="4_xr5we"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sur4m"]
+resource_name = "Cloud"
+texture = ExtResource("1_eu1fi")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+3:1/0 = 0
+2:1/0 = 0
+1:1/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4700j"]
+resource_name = "Snow"
+texture = ExtResource("2_sur4m")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/terrain_set = 0
+0:0/0/terrain = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+0:0/0/terrains_peering_bit/right_side = 0
+1:0/0 = 0
+1:0/0/terrain_set = 0
+1:0/0/terrain = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+1:0/0/terrains_peering_bit/right_side = 0
+1:0/0/terrains_peering_bit/left_side = 0
+2:0/0 = 0
+2:0/0/terrain_set = 0
+2:0/0/terrain = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+2:0/0/terrains_peering_bit/left_side = 0
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:0/0 = 0
+4:0/0/terrain_set = 0
+4:0/0/terrain = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xr5we"]
+resource_name = "Darkstone"
+texture = ExtResource("3_4700j")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ivfs4"]
+resource_name = "Pole"
+texture = ExtResource("4_xr5we")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:1/0 = 0
+
+[resource]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 1
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Snow"
+terrain_set_0/terrain_0/color = Color(0.3169466, 0.7024731, 1, 1)
+sources/0 = SubResource("TileSetAtlasSource_sur4m")
+sources/1 = SubResource("TileSetAtlasSource_4700j")
+sources/2 = SubResource("TileSetAtlasSource_xr5we")
+sources/3 = SubResource("TileSetAtlasSource_ivfs4")

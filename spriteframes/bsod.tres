@@ -1,0 +1,44 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://jv1b0384nwvn"]
+
+[ext_resource type="Texture2D" uid="uid://qxrq2dffhnil" path="res://data/images/creatures/bsod/bsod-falling-left.png" id="1_vwmou"]
+[ext_resource type="Texture2D" uid="uid://b1pgt7vo2v435" path="res://data/images/creatures/bsod/bsod-squished-left.png" id="2_en21a"]
+[ext_resource type="Texture2D" uid="uid://81fyxu6weoqw" path="res://data/images/creatures/bsod/bsod-left-0.png" id="3_omp3l"]
+[ext_resource type="Texture2D" uid="uid://c1rrciqaf50j6" path="res://data/images/creatures/bsod/bsod-left-1.png" id="4_5aet2"]
+[ext_resource type="Texture2D" uid="uid://bqa2gf3m2qv76" path="res://data/images/creatures/bsod/bsod-left-2.png" id="5_7upu7"]
+[ext_resource type="Texture2D" uid="uid://b6qhmnd7adjsl" path="res://data/images/creatures/bsod/bsod-left-3.png" id="6_uu2q5"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vwmou")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_en21a")
+}],
+"loop": true,
+"name": &"squished",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_omp3l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5aet2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7upu7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_uu2q5")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 8.0
+}]

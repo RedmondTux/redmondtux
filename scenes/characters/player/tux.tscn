@@ -1,0 +1,97 @@
+[gd_scene format=3 uid="uid://rmr8sssmgr84"]
+
+[ext_resource type="Script" uid="uid://cygh1h0xdnfin" path="res://scripts/characters/player/tux.gd" id="1_8argk"]
+[ext_resource type="SpriteFrames" uid="uid://boniqvgqddppl" path="res://spriteframes/tux.tres" id="1_pgjgk"]
+[ext_resource type="SpriteFrames" uid="uid://8lvnh7untfhk" path="res://spriteframes/firetux.tres" id="3_j5dr5"]
+[ext_resource type="AudioStream" uid="uid://df8utkp8gxj34" path="res://data/sounds/bigjump.wav" id="3_k2l3t"]
+[ext_resource type="AudioStream" uid="uid://p1lo451713gs" path="res://data/sounds/herring.wav" id="4_y621o"]
+[ext_resource type="AudioStream" uid="uid://cs22g08wtesf6" path="res://data/sounds/tuxhurt.ogg" id="5_j5dr5"]
+[ext_resource type="AudioStream" uid="uid://bb54awyyexspc" path="res://data/sounds/tuxyay.ogg" id="6_6j7sj"]
+[ext_resource type="AudioStream" uid="uid://bgqgcm0k16q8x" path="res://data/sounds/skid.wav" id="7_y621o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pgjgk"]
+size = Vector2(22, 49)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8argk"]
+size = Vector2(22, 28)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6sw3k"]
+size = Vector2(22, 1)
+
+[node name="Tux" type="CharacterBody2D" unique_id=60483270]
+z_index = 50
+collision_layer = 2
+collision_mask = 257
+script = ExtResource("1_8argk")
+
+[node name="Image" type="AnimatedSprite2D" parent="." unique_id=638676449]
+position = Vector2(-6, 2)
+sprite_frames = ExtResource("1_pgjgk")
+animation = &"stand"
+centered = false
+
+[node name="FireImage" type="AnimatedSprite2D" parent="." unique_id=1839678058]
+visible = false
+position = Vector2(-6, 2)
+sprite_frames = ExtResource("3_j5dr5")
+animation = &"stand"
+centered = false
+
+[node name="Collision" type="CollisionShape2D" parent="." unique_id=1091375247]
+position = Vector2(17, 39.5)
+shape = SubResource("RectangleShape2D_pgjgk")
+
+[node name="DuckCollision" type="CollisionShape2D" parent="." unique_id=1220027078]
+position = Vector2(17, 50)
+shape = SubResource("RectangleShape2D_8argk")
+
+[node name="Stomp" type="Area2D" parent="." unique_id=647781790]
+collision_layer = 2
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stomp" unique_id=316557192]
+position = Vector2(17, 64.5)
+shape = SubResource("RectangleShape2D_6sw3k")
+
+[node name="Camera" type="Camera2D" parent="." unique_id=1536484679]
+limit_left = 0
+limit_top = 0
+limit_bottom = 480
+drag_vertical_enabled = true
+drag_top_margin = 0.5
+drag_bottom_margin = 0.5
+
+[node name="CeilingDetector" type="RayCast2D" parent="." unique_id=869453538]
+position = Vector2(17, 50)
+target_position = Vector2(0, -15)
+
+[node name="JumpSound" type="AudioStreamPlayer" parent="." unique_id=1620889827]
+stream = ExtResource("3_k2l3t")
+
+[node name="InvincibleSound" type="AudioStreamPlayer" parent="." unique_id=1898488911]
+stream = ExtResource("4_y621o")
+volume_db = -7.5
+
+[node name="TuxHurtSound" type="AudioStreamPlayer" parent="." unique_id=536348276]
+stream = ExtResource("5_j5dr5")
+
+[node name="TuxYaySound" type="AudioStreamPlayer" parent="." unique_id=995470257]
+stream = ExtResource("6_6j7sj")
+volume_db = 1.0
+
+[node name="SkidSound" type="AudioStreamPlayer" parent="." unique_id=1052797562]
+stream = ExtResource("7_y621o")
+volume_db = 1.0
+max_polyphony = 3
+
+[node name="CoyoteTimer" type="Timer" parent="." unique_id=41939388]
+wait_time = 0.18
+one_shot = true
+
+[node name="TileTimer" type="Timer" parent="." unique_id=412425135]
+wait_time = 0.05
+one_shot = true
+
+[node name="HerringTimer" type="Timer" parent="." unique_id=1627480071]
+wait_time = 10.0
+one_shot = true
